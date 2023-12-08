@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`</title>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="grid-item">Monday</div>
+            <div class="grid-item">SB</div>
+            <div class="grid-item">SB</div>
+            <div class="grid-item">SB</div>
+            <div class="grid-item">Tuesday</div>
+            <div class="grid-item">SB</div>
+            <div class="grid-item">SB</div>
+            <div class="grid-item">SB</div>
+            <div class="grid-item">Wednesday</div>
+            <div class="grid-item">SB</div>
+            <div class="grid-item">SB</div>
+            <div class="grid-item">SB</div>
+            <div class="grid-item">Thursday</div>
+            <div class="grid-item">SB</div>
+            <div class="grid-item">SB</div>
+            <div class="grid-item">SB</div>
+        </div>
+    </body>    
+</html>
+CSS
+.container{
+    display:grid;
+    grid-template-columns:100px 100px 100px 100px;
+    grid-template-rows:50px 50px 50px 50px;
+    
+}
+.grid-item{
+    border:1px solid blue;
+    background-color:cyan;
+    text-align:center;
+    padding:15px;
+}

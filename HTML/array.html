@@ -1,0 +1,61 @@
+<!--Write your html code here...-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`</title>
+        
+    </head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <p id="demo"></p>
+        <script>
+        const fruits=["banana","orange","apple","mango"];
+            document.getElementById("demo").innerHTML=fruits.toString();
+        </script>    
+    </body>
+</html>
+
+OBJECT
+const person={
+    name:"Shivayazhini T",
+    age:"17",
+    gender:"Female",
+    college:"SKCT"
+};
+document.write(person.name); 
+document.write(person.age); 
+document.write(person.gender);
+document.write(person.college);
+
+DESTRUCTURING
+const {name,age}={
+    name:"Shivayazhini T",
+    age:"17",
+};
+document.write(name); 
+document.write(age); 
+
+BIND METHOD
+const person={
+    firstName:"Shivayazhini",
+    lastName:"Thamilselvan",
+    fullName:function(){
+        return this.firstName +""+ this.lastName;}
+    };
+    
+const member={
+    firstName:"Kavitha",
+    lastName:"Balasubramanian",
+    
+};
+let fullName= person.fullName.bind(member);
+document.write(fullName()); 
+
+SPREADWAYS
+const ar1=[1,2,3,4];
+const ar2=[6,7,8,9];
+const ar3=[...ar1];
+document.write(ar3 + "<br>")
+const ar4=[...ar1,...ar2,...ar3];
+document.write(ar4)
